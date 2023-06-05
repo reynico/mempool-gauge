@@ -13,7 +13,7 @@ unsigned long prev_millis = 0;
 const long check_interval = 60000;  // 1 minute in milliseconds
 
 void setup() {
-  s1.attach(15, 370, 2400);  // GPIO15 / D8
+  s1.attach(5, 370, 2400);  // GPIO5 / D1
   set_servo(0); // start inverted
   pinMode(TRIGGER_PIN, INPUT_PULLUP);
   Serial.begin(115200);
